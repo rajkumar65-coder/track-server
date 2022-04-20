@@ -14,7 +14,7 @@ app.use(authRoutes);
 app.use(trackRoutes);
 
 const mongoUri =
-    'mongodb+srv://admin:26rajkumar12@cluster0.yezzw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+    'mongodb+srv://admin:26rajkumar12@cluster0.yezzw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 mongoose.connect(mongoUri);
 mongoose.connection.on('connected', () => {
     console.log('Connected to mongo instance');
